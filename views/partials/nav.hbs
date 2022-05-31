@@ -1,0 +1,40 @@
+<nav>
+  <div class="container">
+      <div class="nav-wrapper"><a class="brand-logo" href="/">ONESHOP</a>
+        <ul class="right hide-on-med-and-down" id="nav-mobile">
+          {{#if isHome}}
+          <li class="active"><a href="/">Home <img src="/images/home.png" alt=""></a></li>
+          {{else}}
+          <li><a href="/">Home <img src="/images/home.png" alt=""></a></li>
+          {{/if}}
+
+          {{#if isBooks}}
+          <li class="active"><a href="/product/add">Products <img src="/images/shopping-cart.png" alt=""></a></li>
+          {{else}}
+          <li><a href="/product/add">Products <img src="/images/shopping-cart.png" alt=""></a></li>
+          {{/if}}
+
+          {{#if isAbout}}
+          <li class="active"><a href="/about">About <img src="/images/information-button.png" alt=""></a></li>
+          {{else}}
+          <li><a href="/about">About <img src="/images/information-button.png" alt=""></a></li>
+          {{/if}}
+
+          {{#if is}}
+          <li class="active"><a href="#">Login<img src="/images/user.png" alt=""></a></li>
+          {{else}}
+          <li><a href="#">Login<img src="/images/user.png" alt=""></a></a></li>
+          {{/if}}
+
+
+          {{#if is}}
+          <li class="active"><a href="#">Phone<img src="/images/call.png" alt=""></a></li>
+          {{else}}
+          <li><a href="#">Phone<img src="/images/call.png" alt=""></a></li>
+          {{/if}}
+
+        </ul>
+
+    </div>
+  </div>
+</nav>
