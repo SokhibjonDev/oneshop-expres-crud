@@ -70,7 +70,7 @@ router.post('/add', authMiddleware, async (req, res) => {
         req.body.img
     )
     await book.save()
-    res.status(201).redirect('/products')
+    res.status(201).redirect('/product')
 
 
     // Obyektni yaratamiz yangi kitobni

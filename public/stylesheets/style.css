@@ -16,6 +16,7 @@ nav,
 }
 .books {
     margin-top: 100px;
+    
 }
 
 nav ul li a {
@@ -106,3 +107,73 @@ body {
     padding: 20px 40px;
     font-size: 18px;
 }
+
+
+.card{
+    margin-bottom: 50px;
+    background:rgb(8, 134, 8) ;
+}
+.card p{
+color: #fff;
+}
+.card-content{
+    background:rgb(8, 219, 8) ; 
+}
+.asd{
+    background: green;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    width: 300px;
+    margin: auto;
+    margin-top: 42px;
+}
+
+.mt{
+    color: #fff;
+}
+.books::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .books::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .books::-webkit-scrollbar-thumb {
+    background: green; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .books::-webkit-scrollbar-thumb:hover {
+    background:  green; 
+  }
+
+  form{
+      margin-top: 42px;
+      color: green;
+  }
+
+  ::placeholder{
+      color: green;
+  }
+
+  input{
+      color: green;
+      }
+  
+  .btn{
+      background: green;
+      transition: .5s;
+  }
+
+  .btn:hover{
+      transform: scale(2);
+      background: green;
+  }
