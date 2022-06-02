@@ -56,7 +56,7 @@ router.post('/add', authMiddleware, async (req, res) => {
     // Validatsiya // hiyalaymiz
     let bookSchema = Joi.object({
         name: Joi.string().min(3).max(30).required(),
-        year: Joi.number().integer().min(1900).max(2022).required(),
+        price: Joi.number().integer().min(1900).max(200001).required(),
         img: Joi.string()
     })
     const result = bookSchema.validate(req.body)
