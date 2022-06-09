@@ -39,16 +39,31 @@ router.get('/sort', (req, res) => {
 })
 
 // Get request with params
-router.get('/:id/:polka', (req, res) => {
-    const id = +req.params.id
-    const book = books.find((book) => book.id === id)
-    if (book) {
-        // Clientga chiqariladi
-        res.status(200).send(book)
-    } else {
-        res.status(400).send('Bu parametrli kitob mavjud emas...')
-    }
+// router.get('/:id/:polka', (req, res) => {
+//     const id = +req.params.id
+//     const book = books.find((book) => book.id === id)
+//     if (book) {
+//         // Clientga chiqariladi
+//         res.status(200).send(book)
+//     } else {
+//         res.status(400).send('Bu parametrli kitob mavjud emas...')
+//     }
 
+// })
+
+router.get('/update/:id/add', (req,res) => {
+    res.render('booksFormUpdate', {
+        title: 'Update',
+        usersid: req.params.id
+    })
+})
+
+router.post('/update/:id/add', (req,res) => {
+    const book = new Books(req.body.name, req.body.password, req.body.img)
+
+    book.updateById(req.params.id)
+
+    res.redirect('/product')
 })
 
 // POST request
@@ -114,10 +129,10 @@ router.put('/update/:id', authMiddleware, (req, res) => {
 })
 
 // Delete request
-router.delete('/delete/:id', authMiddleware, (req, res) => {
-    const idx = books.findIndex(book => book.id === +req.params.id)
-    books.splice(idx, 1)
-    res.status(200).send(books)
+router.get('/delete/:id', async (req, res) => {
+    console.log('ish');
+    await Books.removeById(req.params.id)
+    res.status(200).redirect('/product')
 })
 
 function validateBody(body, bookSchema, res) {

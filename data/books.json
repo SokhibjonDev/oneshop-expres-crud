@@ -1,1 +1,23 @@
-{"books":[{"name":"asdasdasd","year":2012,"img":"https://xabar.uz/static/crop/3/8/920__95_3892899160.jpg","id":"00bef877-cc99-4389-9b33-13bf00916567","alt":""},{"name":"asdad","year":2022,"img":"https://i.pinimg.com/originals/84/73/d2/8473d252e3dacc8adbfa42da04baa50b.jpg","id":"bf1ab7f8-6744-4802-ba77-48d1bc780400"},{"name":"asasdasdasd","year":null,"img":"https://get.pxhere.com/photo/apple-plant-fruit-food-red-produce-kitchen-eat-fruits-foods-apples-diet-edible-hunger-sano-flowering-plant-rose-family-nectarine-goodness-an-ingredient-land-plant-rose-order-711281.jpg","id":"21081e59-70db-4e95-b260-048ae35dc811"}]}
+{
+    "books": [
+        {
+            "name": "asdasdasd",
+            "year": 2012,
+            "img": "https://xabar.uz/static/crop/3/8/920__95_3892899160.jpg",
+            "id": "00bef877-cc99-4389-9b33-13bf00916567",
+            "alt": ""
+        },
+        {
+            "name": "asdad",
+            "year": 2022,
+            "img": "https://i.pinimg.com/originals/84/73/d2/8473d252e3dacc8adbfa42da04baa50b.jpg",
+            "id": "bf1ab7f8-6744-4802-ba77-48d1bc780400"
+        },
+        {
+            "name": "asasdasdasd",
+            "year": null,
+            "img": "https://get.pxhere.com/photo/apple-plant-fruit-food-red-produce-kitchen-eat-fruits-foods-apples-diet-edible-hunger-sano-flowering-plant-rose-family-nectarine-goodness-an-ingredient-land-plant-rose-order-711281.jpg",
+            "id": "21081e59-70db-4e95-b260-048ae35dc811"
+        }
+    ]
+}

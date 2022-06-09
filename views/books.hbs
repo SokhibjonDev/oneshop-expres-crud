@@ -14,7 +14,8 @@
                     <p>{{year}}</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="/product/delete/{{id}}">delete</a>
+                    <a href="/product/update/{{id}}/add">update</a>
                 </div>
             </div>
         </div>
@@ -24,5 +25,7 @@
     {{else}}
     <h2 class="mt">Books are empty</h2>
     {{/if}}
+
+    <a href="/product/add">Add</a>
 </div>
 
